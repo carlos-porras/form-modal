@@ -13,12 +13,12 @@
 <body>
 
 <!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalNorm">
+<button class="btn btn-primary btn-lg open-modal">
     Launch modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+<div class="modal fade" id="modalsito" tabindex="-1" role="dialog" 
      aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -154,6 +154,10 @@
 		    language:'es',
 		    dateTimeFormat: 'yyyy-MM-dd hh:mm:ss',
 		    scrollInput:true,
+		  });
+
+		  $('.open-modal').on('click', function(){
+		  	$('#modalsito').modal('show');
 		  });
 		});
 	</script>
